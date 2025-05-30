@@ -1,15 +1,14 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Housing - AWARENSEMBLE</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-
+  <!-- load your script after parsing the DOM -->
+  <script src="script.js" defer></script>
 </head>
-
 <body>
   <header class="hero">
     <div class="hero-left">
@@ -19,37 +18,32 @@
         <p class="slogan">prevention, protection, perception</p>
       </div>
     </div>
-      <div class="hero-right">
-      
-  <nav class="nav-links">
-    <div class="nav-items">
-  <a href="index.html" class="nav-home-link">
-    <img src="images/house.PNG" alt="Home icon" class="nav-icon"> Home
-  </a>
-  <a href="about.html" class="nav-home-link">
-    <img src="images/about.png" alt="About icon" class="nav-icon"> About Us
-  </a>
-  <a href="contact.html" class="nav-home-link">
-    <img src="images/contactus.PNG" alt="Contact icon" class="nav-icon"> Contact Us
-  </a>
+    <div class="hero-right">
+      <nav class="nav-links">
+        <div class="nav-items">
+          <a href="index.html" class="nav-home-link">
+            <img src="images/house.PNG" alt="Home icon" class="nav-icon"> Home
+          </a>
+          <a href="about.html" class="nav-home-link">
+            <img src="images/about.png" alt="About icon" class="nav-icon"> About Us
+          </a>
+          <a href="contact.html" class="nav-home-link">
+            <img src="images/contactus.PNG" alt="Contact icon" class="nav-icon"> Contact Us
+          </a>
+        </div>
+      </nav>
+      <input id="search" type="text" placeholder="Search...">
     </div>
-</nav>
-
-<input type="text" placeholder="Search...">
-</nav>
-</div>
   </header>
 
-   <div class="section-heading">
+  <div class="section-heading">
     <h2>Housing</h2>
-  <img src="images/bed.PNG" alt="Bed icon" class="section-icon">
-</div>
+    <img src="images/bed.PNG" alt="Bed icon" class="section-icon">
+  </div>
 
   <section class="banner">
     <p>Find housing support that matches your needs.</p>
   </section>
-
-
 
   <section class="filter-bar container">
     <p><strong>Filters:</strong></p>
@@ -57,89 +51,99 @@
     <label><input type="checkbox" name="filter" value="age18+" class="tag-filter"> Age 18+</label>
     <label><input type="checkbox" name="filter" value="transitional" class="tag-filter"> Transitional Housing</label>
     <label><input type="checkbox" name="filter" value="rent" class="tag-filter"> Independent Living Aid</label>
-    <label><input type="checkbox" name="filter" value="men" class="tag-filter"> Men Only</label>
-    <label><input type="checkbox" name="filter" value="women" class="tag-filter"> Women Only</label>
+    <label><input type="checkbox" name="filter" value="men-only" class="tag-filter"> Men Only</label>
+    <label><input type="checkbox" name="filter" value="women-only" class="tag-filter"> Women Only</label>
     <label><input type="checkbox" name="filter" value="lgbtqia+" class="tag-filter"> LGBTQIA+</label>
-
   </section>
-
- 
-
-
 
   <main class="hero-cards container">
     <div class="grid">
 
-    <a class="feature-card" href="https://211central.ca/record/75717704/" target="_blank" data-tags="transitional housing age16-18 age18+ lgbtqia+">
-      <h3>Friends of Ruby</h3>
-      <p>Transitional housing for 2SLGBTQIA+ youth ages 16-29</p>
-      <p><br><b>Address: 257 Dundas St E, Toronto, ON</b></p>
-    </a>
-    <a class="feature-card" href="https://covenanthousetoronto.ca/our-solution/housing-and-aftercare/" target="_blank" data-tags="transitional housing age16-18 age18+">
-      <h3>Covenant House</h3>
-      <p>Reception staff and youth workers are available to welcome youth day and night. 96 beds available and residents have access to showers, meals and
-        programming.</p>
-        <p><br> <b>Address: 20 Gerrard ST E, Toronto, ON</b></p>
+      <a class="feature-card"
+         href="https://211central.ca/record/75717704/"
+         target="_blank"
+         data-tags="transitional age16-18 age18+ lgbtqia+">
+        <h3>Friends of Ruby</h3>
+        <p>Transitional housing for 2SLGBTQIA+ youth ages 16-29</p>
+        <p><b>Address: 257 Dundas St E, Toronto, ON</b></p>
+      </a>
+
+      <a class="feature-card"
+         href="https://covenanthousetoronto.ca/our-solution/housing-and-aftercare/"
+         target="_blank"
+         data-tags="transitional age16-18 age18+">
+        <h3>Covenant House</h3>
+        <p>Reception staff and youth workers; 96 beds, showers, meals, programming.</p>
+        <p><b>Address: 20 Gerrard St E, Toronto, ON</b></p>
         <p><b>Email: inquiries@covenanthouse.ca</b></p>
-        <p><b>Phone: 1-800-435-7308 / (416) 598-4898 </b></p>
-    </a>
-    <a class="feature-card" href="https://loftcs.org/housing/independent-living/" target="_blank" data-tags="transitional rent housing age16-18 age18+">
-      <h3>LOFT Independent Living</h3>
-      <p>Low-support housing through apartment buildings, shared homes and through our partnerships with Toronto Community Housing Corporation and
-      Simcoe County Housing Corporation. </p>
-      <p><br><b>Address: 240 Edward St Unit 3, Aurora, ON L4G 3S9 </b></p>
+        <p><b>Phone: 1-800-435-7308 / (416) 598-4898</b></p>
+      </a>
+
+      <a class="feature-card"
+         href="https://loftcs.org/housing/independent-living/"
+         target="_blank"
+         data-tags="transitional rent age16-18 age18+">
+        <h3>LOFT Independent Living</h3>
+        <p>Low-support housing via apartments, shared homes, partnerships with TCHC &amp; Simcoe County.</p>
+        <p><b>Address: 240 Edward St Unit 3, Aurora, ON L4G 3S9</b></p>
         <p><b>Email: info@loftcs.org</b></p>
         <p><b>Phone: 416-979-1994</b></p>
-    </a>
-    <a class="feature-card" href="https://horizonsforyouth.org/housing" target="_blank" data-tags="transitional housing age16-18 age18+">
-      <h3>Horizons for Youth</h3>
-      <p> Shelter for at-risk and homeless youth between the ages of 16-24 years old</p>
-       <p><br><b>Address: 422 Gilbert Ave, Toronto ,ON</b></p>
-        <p><b>Email: info@horizonsforyouth.org</b></p>
-        <p><b>Phone: 416.781.9898</b></p>
-    </a>
-    <a class="feature-card" href="https://www.conccommunity.org/contact/" target="_blank" data-tags="transitional housing age18+ men-only">
-      <h3>CONC Men's Shelter</h3>
-      <p>For Men. Men's Shelter for 68 men each night and 20 units of transitional housing.</p>
-      <p><br><b>Email: info@conc.ca</b></p>
-        <p><b>Phone: (416) 516-8642</b></p>
-        <p><b>General Intake: 416-338-4766</b></p>
-    </a>
-    <a class="feature-card" href="https://familyservicetoronto.org/our-services/programs-and-services/transitional-and-housing-support/" target="_blank" data-tags="transitional housing age18+  women-only">
-      <h3>FST Housing</h3>
-      <p>Women Only. For Women-identified individuals who seek support after experiencing abuse by their partners or significant
-        others or survivors of human trafficking, aged 18 years or older. Interpreter services also available.
-       </p>
-        <p><br><b>Address: 128a Sterling Rd Toronto, ON M6R 2B7</b></p>
-        <p><b>Email: sau@familyservicetoronto.org.</b></p>
-        <p><b>Phone: 416-595-9618</b></p>    
       </a>
-  </div>
+
+      <a class="feature-card"
+         href="https://horizonsforyouth.org/housing"
+         target="_blank"
+         data-tags="transitional age16-18 age18+">
+        <h3>Horizons for Youth</h3>
+        <p>Shelter for at-risk &amp; homeless youth ages 16–24.</p>
+        <p><b>Address: 422 Gilbert Ave, Toronto, ON</b></p>
+        <p><b>Email: info@horizonsforyouth.org</b></p>
+        <p><b>Phone: 416-781-9898</b></p>
+      </a>
+
+      <a class="feature-card"
+         href="https://www.conccommunity.org/contact/"
+         target="_blank"
+         data-tags="transitional age18+ men-only">
+        <h3>CONC Men's Shelter</h3>
+        <p>Men’s shelter &amp; 20 units of transitional housing (68 beds).</p>
+        <p><b>Email: info@conc.ca</b></p>
+        <p><b>Phone: (416) 516-8642</b></p>
+      </a>
+
+      <a class="feature-card"
+         href="https://familyservicetoronto.org/our-services/programs-and-services/transitional-and-housing-support/"
+         target="_blank"
+         data-tags="transitional age18+ women-only">
+        <h3>FST Housing</h3>
+        <p>Women-only transitional support for survivors aged 18+ (abuse, trafficking).</p>
+        <p><b>Address: 128a Sterling Rd, Toronto, ON M6R 2B7</b></p>
+        <p><b>Email: sau@familyservicetoronto.org</b></p>
+        <p><b>Phone: 416-595-9618</b></p>
+      </a>
+
+    </div>
   </main>
 
- <section class="contact-section">
-  <div class="contact-container">
-    <img src="images/contactsticker.PNG" alt="Contact Illustration" class="contact-side-image">
-
-    <div class="contact-content">
-      <h2>Contact Us</h2>
-
-      <p>
-        <img src="images/maillogo.png" alt="Email Icon" class="icon">
-        <a href="mailto:awarensemble@gmail.com">awarensemble@gmail.com</a>
-      </p>
-
-      <p>
-        <img src="images/iglogo.png" alt="Instagram Icon" class="icon">
-        <a href="https://www.instagram.com/awarensemble_gta" target="_blank">@awarensemble_gta</a>
-      </p>
+  <section class="contact-section">
+    <div class="contact-container">
+      <img src="images/contactsticker.PNG" alt="Contact Illustration" class="contact-side-image">
+      <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>
+          <img src="images/maillogo.png" alt="Email Icon" class="icon">
+          <a href="mailto:awarensemble@gmail.com">awarensemble@gmail.com</a>
+        </p>
+        <p>
+          <img src="images/iglogo.png" alt="Instagram Icon" class="icon">
+          <a href="https://www.instagram.com/awarensemble_gta" target="_blank">@awarensemble_gta</a>
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <footer class="footer">
     <p>&copy; 2025 AWARENSEMBLE. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
