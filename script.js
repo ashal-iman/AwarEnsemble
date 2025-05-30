@@ -13,11 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
     cards.forEach(card => {
       const textMatch = card.textContent.toLowerCase().includes(searchQuery);
 
+      // Split tags by spaces or commas, remove empty strings
       const tags = (card.dataset.tags || '')
         .toLowerCase()
         .split(/[\s,]+/)
         .filter(tag => tag);
 
+      // Check if every active filter is included in card's tags
       const tagMatch = activeFilters.every(f => tags.includes(f));
 
       card.style.display = (textMatch && tagMatch) ? '' : 'none';
