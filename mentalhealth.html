@@ -1,109 +1,102 @@
+<!-- mentalhealth.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mental Health - AWARENSEMBLE</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
   <header class="hero">
     <div class="hero-left">
-      <img src="images/logo.PNG" alt="AWARENSEMBLE Logo" class="logo">
+      <img src="images/logo.PNG" alt="AWARENSEMBLE Logo" class="logo" />
       <div class="hero-text">
         <h1>AWARENSEMBLE</h1>
         <p class="slogan">prevention, protection, perception</p>
       </div>
     </div>
-      <div class="hero-right">
-      
-  <nav class="nav-links">
-    <div class="nav-items">
-  <a href="index.html" class="nav-home-link">
-    <img src="images/house.PNG" alt="Home icon" class="nav-icon"> Home
-  </a>
-  <a href="about.html" class="nav-home-link">
-    <img src="images/about.png" alt="About icon" class="nav-icon"> About Us
-  </a>
-  <a href="contact.html" class="nav-home-link">
-    <img src="images/contactus.PNG" alt="Contact icon" class="nav-icon"> Contact Us
-  </a>
+    <div class="hero-right">
+      <nav class="nav-links">
+        <div class="nav-items">
+          <a href="index.html" class="nav-home-link">
+            <img src="images/house.PNG" alt="Home icon" class="nav-icon" /> Home
+          </a>
+          <a href="about.html" class="nav-home-link">
+            <img src="images/about.png" alt="About Us icon" class="nav-icon" /> About Us
+          </a>
+          <a href="contact.html" class="nav-home-link">
+            <img src="images/contactus.PNG" alt="Contact Us icon" class="nav-icon" /> Contact Us
+          </a>
+        </div>
+      </nav>
+      <input id="search" type="text" placeholder="Search..." aria-label="Search" />
     </div>
-</nav>
-
-<input type="text" placeholder="Search...">
-</nav>
-</div>
   </header>
 
-   <div class="section-heading">
-  <img src="images/brightday.PNG" alt="Mental Health icon" class="section-icon">
-  <h2>Mental Health</h2>
-</div>
+  <section class="section-heading">
+    <h2>Mental Health</h2>
+    <img src="images/brightday.PNG" alt="Mental Health icon" class="section-icon" />
+  </section>
 
   <section class="banner">
     <p>Access mental health support for your wellness and healing.</p>
   </section>
 
-  <section class="filter-bar container">
+  <section class="filter-bar container" aria-label="Mental health filters">
     <p><strong>Filters:</strong></p>
-    <label><input type="checkbox"> Peer Support</label>
-    <label><input type="checkbox"> Virtual Counselling</label>
-    <label><input type="checkbox"> Drug / Alcohol </label>
-    <label><input type="checkbox"> Therapy </label>
+    <label><input type="checkbox" value="peersupport" class="tag-filter" /> Peer Support</label>
+    <label><input type="checkbox" value="virtualcounselling" class="tag-filter" /> Virtual Counselling</label>
+    <label><input type="checkbox" value="drugalcohol" class="tag-filter" /> Drug / Alcohol</label>
+    <label><input type="checkbox" value="therapy" class="tag-filter" /> Therapy</label>
   </section>
 
   <main class="hero-cards container">
     <div class="grid">
-      <a class="feature-card" href="https://stellasplace.ca/programs/" target="_blank">
-      <h3>Stella’s Place</h3>
-      <p>Peer support, therapy, and psychiatry for youth (18–29)</p>
-    </a>
-    <a class="feature-card" href="https://yws.on.ca/how-we-help/mental-health-program/#" target="_blank">
-      <h3>Youth Without Shelter</h3>
-      <p>Mental health support for Homeless Youth</p>
-      <p>Phone: 416.748.0110   Fax: 416.748.2169 </p>
-      <p>E-mail: communications@yws.on.ca</p>
+      <a class="feature-card" href="https://stellasplace.ca/programs/" target="_blank" data-tags="peersupport therapy">
+        <h3>Stella’s Place</h3>
+        <p>Peer support, therapy, and psychiatry for youth (18–29).</p>
+      </a>
 
-    </a>
-    <a class="feature-card" href="https://www.tngcommunityto.org/Programs-Services/Children-Youth" target="_blank">
-      <h3>TNG Community</h3>
-      <p>Drug / alcohol support, youth violence prevention, and drop-in services</p>
-    </a>
-    <a class="feature-card" href="https://onestoptalk.ca/kidsteens/how/" target="_blank">
-      <h3>One Stop Talk</h3>
-      <p>Free virtual therapy for Ontario youth under 18</p>
-    </a>
+      <a class="feature-card" href="https://yws.on.ca/how-we-help/mental-health-program/#" target="_blank" data-tags="therapy peersupport">
+        <h3>Youth Without Shelter</h3>
+        <p>Mental health support for homeless youth.</p>
+        <p><strong>Phone:</strong> 416.748.0110 &nbsp; <strong>Fax:</strong> 416.748.2169</p>
+        <p><strong>Email:</strong> <a href="mailto:communications@yws.on.ca">communications@yws.on.ca</a></p>
+      </a>
+
+      <a class="feature-card" href="https://www.tngcommunityto.org/Programs-Services/Children-Youth" target="_blank" data-tags="drugalcohol">
+        <h3>TNG Community</h3>
+        <p>Drug / alcohol support, youth violence prevention, and drop-in services.</p>
+      </a>
+
+      <a class="feature-card" href="https://onestoptalk.ca/kidsteens/how/" target="_blank" data-tags="virtualcounselling therapy">
+        <h3>One Stop Talk</h3>
+        <p>Free virtual therapy for Ontario youth under 18.</p>
+      </a>
     </div>
   </main>
 
- <section class="contact-section">
-  <div class="contact-container">
-    <img src="images/contactsticker.PNG" alt="Contact Illustration" class="contact-side-image">
-
-    <div class="contact-content">
-      <h2>Contact Us</h2>
-
-      <p>
-        <img src="images/maillogo.png" alt="Email Icon" class="icon">
-        <a href="mailto:awarensemble@gmail.com">awarensemble@gmail.com</a>
-      </p>
-
-      <p>
-        <img src="images/iglogo.png" alt="Instagram Icon" class="icon">
-        <a href="https://www.instagram.com/awarensemble_gta" target="_blank">@awarensemble_gta</a>
-      </p>
+  <section class="contact-section">
+    <div class="contact-container">
+      <img src="images/contactsticker.PNG" alt="Illustration of contacting us" class="contact-side-image" />
+      <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>
+          <img src="images/maillogo.png" alt="Email icon" class="icon" />
+          <a href="mailto:awarensemble@gmail.com">awarensemble@gmail.com</a>
+        </p>
+        <p>
+          <img src="images/iglogo.png" alt="Instagram icon" class="icon" />
+          <a href="https://www.instagram.com/awarensemble_gta" target="_blank">@awarensemble_gta</a>
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <footer class="footer">
     <p>&copy; 2025 AWARENSEMBLE. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
