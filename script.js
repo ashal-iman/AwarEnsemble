@@ -5,22 +5,27 @@ document.addEventListener('DOMContentLoaded', function () {
   const searchBar = document.querySelector('input[type="text"]');
 
   function filterCards() {
-    const activeFilters = Array.from(checkboxes)
-      .filter(checkbox => checkbox.checked)
-      .map(checkbox => checkbox.nextSibling.textContent.trim().toLowerCase());
+  const activeFilters = Array.from(checkboxes)
+    .filter(checkbox => checkbox.checked)
+    .map(checkbox => checkbox.value.toLowerCase());
 
-    const searchQuery = searchBar.value.trim().toLowerCase();
+  const searchQuery = searchBar.value.trim().toLowerCase();
 
-    cards.forEach(card => {
-      const cardText = card.textContent.toLowerCase();
-      const matchesSearch = cardText.includes(searchQuery);
-      const matchesFilters = activeFilters.every(filter => cardText.includes(filter));
+  cards.forEach(card => {
+    const cardText = card.textContent.toLowerCase();
+    const tags = card.dataset.tags.toLowerCase().split(/\s+/); // split data-tags string
 
-      if (matchesSearch && matchesFilters) {
-        card.style.display = '';
-      } else {
-        card.style.display = 'none';
-      }
+    const matchesSearch = cardText.includes(searchQuery);
+    const matchesFilters = activeFilters.every(filter => tags.includes(filter));
+
+    if (matchesSearch && matchesFilters) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
     });
   }
 
