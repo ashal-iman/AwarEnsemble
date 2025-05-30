@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,11 +7,10 @@
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
-
 <body>
   <header class="hero">
     <div class="hero-left">
-      <img src="images/logo.PNG" alt="AWARENSEMBLE Logo" class="logo" />
+      <img src="images/logo.PNG" alt="AWARENSEMBLE logo" class="logo" />
       <div class="hero-text">
         <h1>AWARENSEMBLE</h1>
         <p class="slogan">prevention, protection, perception</p>
@@ -25,68 +23,61 @@
             <img src="images/house.PNG" alt="Home icon" class="nav-icon" /> Home
           </a>
           <a href="about.html" class="nav-home-link">
-            <img src="images/about.png" alt="About icon" class="nav-icon" /> About Us
+            <img src="images/about.png" alt="About Us icon" class="nav-icon" /> About Us
           </a>
           <a href="contact.html" class="nav-home-link">
-            <img src="images/contactus.PNG" alt="Contact icon" class="nav-icon" /> Contact Us
+            <img src="images/contactus.PNG" alt="Contact Us icon" class="nav-icon" /> Contact Us
           </a>
         </div>
       </nav>
-      <input id="search" type="text" placeholder="Search..." />
+      <input id="search" type="text" placeholder="Search..." aria-label="Search" />
     </div>
   </header>
 
-  <div class="section-heading">
+  <section class="section-heading">
     <h2>Employment</h2>
     <img src="images/time.PNG" alt="Employment icon" class="section-icon" />
-  </div>
+  </section>
 
   <section class="banner">
     <p>Get help with resumes, job search, and youth employment programs.</p>
   </section>
 
-  <section class="filter-bar container">
+  <section class="filter-bar container" aria-label="Employment filters">
     <p><strong>Filters:</strong></p>
-    <label for="filter-resume">
-      <input type="checkbox" id="filter-resume" value="resume" /> Resume
-    </label>
-    <label for="filter-techskills">
-      <input type="checkbox" id="filter-techskills" value="tech skills" /> Tech Skills
-    </label>
-    <label for="filter-jobboard">
-      <input type="checkbox" id="filter-jobboard" value="job board" /> Job Board
-    </label>
+    <label><input type="checkbox" value="resume" class="tag-filter" /> Resume</label>
+    <label><input type="checkbox" value="tech-skills" class="tag-filter" /> Tech Skills</label>
+    <label><input type="checkbox" value="job-board" class="tag-filter" /> Job Board</label>
   </section>
 
   <main class="hero-cards container">
     <div class="grid">
-      <a class="feature-card" href="https://careers.yorku.ca/" target="_blank" data-tags="resume, job board">
+      <a class="feature-card" href="https://careers.yorku.ca/" target="_blank" data-tags="resume job-board">
         <h3><span class="categories">YorkU Career Centre</span></h3>
         <p>Resume building, career counseling, webinars, and job listings for York students.</p>
       </a>
 
-      <a class="feature-card" href="https://www.ontario.ca/page/get-help-finding-youth-or-student-job" target="_blank"
-        data-tags="job board">
+      <a class="feature-card" href="https://www.ontario.ca/page/get-help-finding-youth-or-student-job" target="_blank" data-tags="job-board">
         <h3><span class="categories">Ontario Youth Job Help</span></h3>
         <p>Government job help and job bank tools for youth ages 15–29.</p>
       </a>
 
-      <a class="feature-card" href="https://www.yes.on.ca/job-board/" target="_blank" data-tags="job board">
+      <a class="feature-card" href="https://www.yes.on.ca/job-board/" target="_blank" data-tags="job-board">
         <h3>YES Job Board</h3>
         <p>Employment agency for youth 15–30 offering job search help and mentorship.</p>
       </a>
 
-      <a class="feature-card" href="https://covenanthousetoronto.easyapply.co/" target="_blank" data-tags="job board">
+      <a class="feature-card" href="https://covenanthousetoronto.easyapply.co/" target="_blank" data-tags="job-board resume">
         <h3>Covenant House Jobs</h3>
         <p>Employment and training opportunities for youth experiencing homelessness (ages 16–24).</p>
       </a>
 
-      <a class="feature-card" href="https://npowercanada.ca/" target="_blank" data-tags="tech skills">
+      <a class="feature-card" href="https://npowercanada.ca/" target="_blank" data-tags="tech-skills job-board">
         <h3>NPower Canada</h3>
         <p>Free tech skills training, job readiness, and internships for youth 17–30.</p>
       </a>
 
-      <a class="feature-card" href="https://www.ymcagta.org/employment/youth" target="_blank" data-tags="resume, job board">
+      <a class="feature-card" href="https://www.ymcagta.org/employment/youth" target="_blank" data-tags="resume job-board">
         <h3>YMCA Youth Employment</h3>
         <p>Resume help, interview coaching, and paid job programs tailored to youth needs.</p>
       </a>
@@ -96,19 +87,17 @@
         <p>Free resources focused on interview prep and career exploration for youth with financial barriers.</p>
       </a>
 
-      <a class="feature-card" href="https://stridestoronto.ca/program-service/youth-in-transition-yit-program/" target="_blank"
-        data-tags="job board">
+      <a class="feature-card" href="https://stridestoronto.ca/program-service/youth-in-transition-yit-program/" target="_blank" data-tags="job-board">
         <h3>Strides YIT Program</h3>
         <p>Life planning support for youth in transition; referral needed from CAS or similar.</p>
       </a>
 
-      <a class="feature-card" href="https://careerfoundation.com/" target="_blank" data-tags="resume, job board">
+      <a class="feature-card" href="https://careerfoundation.com/" target="_blank" data-tags="resume job-board">
         <h3>Career Foundation</h3>
         <p>Employment programs, resume support, and job fairs for youth and those facing barriers.</p>
       </a>
 
-      <a class="feature-card" href="https://www.toronto.ca/community-people/employment-social-support/youth-employment-help/type/"
-        target="_blank" data-tags="job board">
+      <a class="feature-card" href="https://www.toronto.ca/community-people/employment-social-support/youth-employment-help/type/" target="_blank" data-tags="job-board">
         <h3>City of Toronto Youth Employment</h3>
         <p>Personalized long-term employment plans for youth ages 18–29 out of school/work.</p>
       </a>
@@ -117,18 +106,15 @@
 
   <section class="contact-section">
     <div class="contact-container">
-      <img src="images/contactsticker.PNG" alt="Contact Illustration" class="contact-side-image" />
-
+      <img src="images/contactsticker.PNG" alt="Illustration of contacting us" class="contact-side-image" />
       <div class="contact-content">
         <h2>Contact Us</h2>
-
         <p>
-          <img src="images/maillogo.png" alt="Email Icon" class="icon" />
+          <img src="images/maillogo.png" alt="Email icon" class="icon" />
           <a href="mailto:awarensemble@gmail.com">awarensemble@gmail.com</a>
         </p>
-
         <p>
-          <img src="images/iglogo.png" alt="Instagram Icon" class="icon" />
+          <img src="images/iglogo.png" alt="Instagram icon" class="icon" />
           <a href="https://www.instagram.com/awarensemble_gta" target="_blank">@awarensemble_gta</a>
         </p>
       </div>
@@ -139,6 +125,5 @@
     <p>&copy; 2025 AWARENSEMBLE. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
 
