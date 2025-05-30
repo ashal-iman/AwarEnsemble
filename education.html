@@ -1,103 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mental Health - AWARENSEMBLE</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education Aid - AWARENSEMBLE</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
   <header class="hero">
     <div class="hero-left">
-      <img src="images/logo.PNG" alt="AWARENSEMBLE Logo" class="logo">
+      <img src="images/logo.PNG" alt="AWARENSEMBLE Logo" class="logo" />
       <div class="hero-text">
         <h1>AWARENSEMBLE</h1>
         <p class="slogan">prevention, protection, perception</p>
       </div>
     </div>
-      <div class="hero-right">
-      
-  <nav class="nav-links">
-    <div class="nav-items">
-  <a href="index.html" class="nav-home-link">
-    <img src="images/house.PNG" alt="Home icon" class="nav-icon"> Home
-  </a>
-  <a href="about.html" class="nav-home-link">
-    <img src="images/about.png" alt="About icon" class="nav-icon"> About Us
-  </a>
-  <a href="contact.html" class="nav-home-link">
-    <img src="images/contactus.PNG" alt="Contact icon" class="nav-icon"> Contact Us
-  </a>
+    <div class="hero-right">
+      <nav class="nav-links">
+        <div class="nav-items">
+          <a href="index.html" class="nav-home-link">
+            <img src="images/house.PNG" alt="Home icon" class="nav-icon" /> Home
+          </a>
+          <a href="about.html" class="nav-home-link">
+            <img src="images/about.png" alt="About Us icon" class="nav-icon" /> About Us
+          </a>
+          <a href="contact.html" class="nav-home-link">
+            <img src="images/contactus.PNG" alt="Contact Us icon" class="nav-icon" /> Contact Us
+          </a>
+        </div>
+      </nav>
+      <input id="search" type="text" placeholder="Search..." aria-label="Search" />
     </div>
-</nav>
-
-<input type="text" placeholder="Search...">
-</nav>
-</div>
   </header>
+
+  <section class="section-heading">
+    <h2>Scholarship and Education Aid</h2>
+    <img src="images/contactus.PNG" alt="Education icon" class="section-icon" />
+  </section>
 
   <section class="banner">
     <p>Access mental health support for your wellness and healing.</p>
   </section>
 
-    <div class="section-heading">
-  <img src="images/contactus.PNG" alt="Education icon" class="section-icon">
-  <h2>Scholarship and Education Aid</h2>
-</div>
-
-  <section class="filter-bar container">
+  <section class="filter-bar container" aria-label="Education filters">
     <p><strong>Filters:</strong></p>
-    <label><input type="checkbox"> Bursary</label>
-    <label><input type="checkbox"> Financial Support</label>
+    <label><input type="checkbox" value="bursary" class="tag-filter" /> Bursary</label>
+    <label><input type="checkbox" value="financialsupport" class="tag-filter" /> Financial Support</label>
   </section>
 
   <main class="hero-cards container">
     <div class="grid">
-      <a class="feature-card" href="https://futurestudents.yorku.ca/financing-your-degree/scholarships-bursaries" target="_blank">
-    <h3>YorkU Scholarships & Bursaries</h3>
-    <p>Explore financial support options for Future York University students.</p>
-  </a>
+      <a class="feature-card" href="https://futurestudents.yorku.ca/financing-your-degree/scholarships-bursaries" target="_blank" data-tags="financialsupport bursary">
+        <h3>YorkU Scholarships & Bursaries</h3>
+        <p>Explore financial support options for Future York University students.</p>
+      </a>
 
-  <a class="feature-card" href="https://students.senecapolytechnic.ca/spaces/179/awards-scholarships-and-bursaries/wiki/view/8642/youth-in-care-tuition-bursary" target="_blank">
-    <h3>Seneca Youth in Care Bursary</h3>
-    <p>Full tuition bursary for eligible youth in care at Seneca College.</p>
-  </a>
+      <a class="feature-card" href="https://students.senecapolytechnic.ca/spaces/179/awards-scholarships-and-bursaries/wiki/view/8642/youth-in-care-tuition-bursary" target="_blank" data-tags="bursary financialsupport">
+        <h3>Seneca Youth in Care Bursary</h3>
+        <p>Full tuition bursary for eligible youth in care at Seneca College.</p>
+      </a>
 
-  <a class="feature-card" href="https://cafdn.org/for-youth/educational-support/" target="_blank">
-    <h3>CAF Scholarship</h3>
-    <p>Get up to $5,000 per year for post-secondary studies if you were in care.</p>
-  </a>
-
+      <a class="feature-card" href="https://cafdn.org/for-youth/educational-support/" target="_blank" data-tags="bursary financialsupport">
+        <h3>CAF Scholarship</h3>
+        <p>Get up to $5,000 per year for post-secondary studies if you were in care.</p>
+      </a>
     </div>
   </main>
 
- <section class="contact-section">
-  <div class="contact-container">
-    <img src="images/contactsticker.PNG" alt="Contact Illustration" class="contact-side-image">
-
-    <div class="contact-content">
-      <h2>Contact Us</h2>
-
-      <p>
-        <img src="images/maillogo.png" alt="Email Icon" class="icon">
-        <a href="mailto:awarensemble@gmail.com">awarensemble@gmail.com</a>
-      </p>
-
-      <p>
-        <img src="images/iglogo.png" alt="Instagram Icon" class="icon">
-        <a href="https://www.instagram.com/awarensemble_gta" target="_blank">@awarensemble_gta</a>
-      </p>
+  <section class="contact-section">
+    <div class="contact-container">
+      <img src="images/contactsticker.PNG" alt="Illustration of contacting us" class="contact-side-image" />
+      <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>
+          <img src="images/maillogo.png" alt="Email icon" class="icon" />
+          <a href="mailto:awarensemble@gmail.com">awarensemble@gmail.com</a>
+        </p>
+        <p>
+          <img src="images/iglogo.png" alt="Instagram icon" class="icon" />
+          <a href="https://www.instagram.com/awarensemble_gta" target="_blank">@awarensemble_gta</a>
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <footer class="footer">
     <p>&copy; 2025 AWARENSEMBLE. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
+
