@@ -2,48 +2,43 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Government Aid - AWARENSEMBLE</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header class="hero">
     <div class="hero-left">
-      <img src="images/logo.PNG" alt="AWARENSEMBLE Logo" class="logo">
+      <img src="images/logo.PNG" alt="AWARENSEMBLE Logo" class="logo"/>
       <div class="hero-text">
         <h1>AWARENSEMBLE</h1>
         <p class="slogan">prevention, protection, perception</p>
       </div>
     </div>
-      <div class="hero-right">
-      
-  <nav class="nav-links">
-    <div class="nav-items">
-  <a href="index.html" class="nav-home-link">
-    <img src="images/house.PNG" alt="Home icon" class="nav-icon"> Home
-  </a>
-  <a href="about.html" class="nav-home-link">
-    <img src="images/about.png" alt="About icon" class="nav-icon"> About Us
-  </a>
-  <a href="contact.html" class="nav-home-link">
-    <img src="images/contactus.PNG" alt="Contact icon" class="nav-icon"> Contact Us
-  </a>
+    <div class="hero-right">
+      <nav class="nav-links">
+        <div class="nav-items">
+          <a href="index.html" class="nav-home-link">
+            <img src="images/house.PNG" alt="Home icon" class="nav-icon" /> Home
+          </a>
+          <a href="about.html" class="nav-home-link">
+            <img src="images/about.png" alt="About icon" class="nav-icon" /> About Us
+          </a>
+          <a href="contact.html" class="nav-home-link">
+            <img src="images/contactus.PNG" alt="Contact icon" class="nav-icon" /> Contact Us
+          </a>
+        </div>
+      </nav>
+      <input type="text" placeholder="Search..." />
     </div>
-</nav>
-
-<input type="text" placeholder="Search...">
-</nav>
-</div>
   </header>
 
-      <div class="section-heading">
-  <img src="images/food.PNG" alt="Government icon" class="section-icon">
-        <h2>Government Aid</h2>
-</div>
+  <div class="section-heading">
+    <img src="images/food.PNG" alt="Government icon" class="section-icon" />
+    <h2>Government Aid</h2>
+  </div>
 
   <section class="banner">
     <p>Find financial and government programs available to you.</p>
@@ -51,68 +46,78 @@
 
   <section class="filter-bar container">
     <p><strong>Filters:</strong></p>
-    <label><input type="checkbox"> Youth from Care</label>
-    <label><input type="checkbox" name="filter" value="age16-18" class="tag-filter"> Age 16–18</label>
-    <label><input type="checkbox"> Indigenous</label>
+    <label><input type="checkbox" class="filter-checkbox" value="care" /> Youth from Care</label>
+    <label><input type="checkbox" class="filter-checkbox" value="age16-18" /> Age 16–18</label>
+    <label><input type="checkbox" class="filter-checkbox" value="indigenous" /> Indigenous</label>
   </section>
 
   <main class="hero-cards container">
     <div class="grid">
       <a class="feature-card" href="https://osap.gov.on.ca/AidEstimator2526Web/enterapp/enter.xhtml" target="_blank" data-tags="age16-18">
-    <h3>OSAP Estimator</h3>
-    <p>Calculate how much financial aid you could receive through OSAP.</p>
-  </a>
+        <h3>OSAP Estimator</h3>
+        <p>Calculate how much financial aid you could receive through OSAP.</p>
+      </a>
 
-  <a class="feature-card" href="https://www.ontario.ca/page/support-youth-child-welfare-system#section-1" target="_blank">
-    <h3>Support for Youth from Care</h3>
-    <p>Programs and supports for youth who were in the child welfare system.</p>
-  </a>
+      <a class="feature-card" href="https://www.ontario.ca/page/support-youth-child-welfare-system#section-1" target="_blank" data-tags="care">
+        <h3>Support for Youth from Care</h3>
+        <p>Programs and supports for youth who were in the child welfare system.</p>
+      </a>
 
-  <a class="feature-card" href="https://www.ontario.ca/page/eligibility-ontario-works-financial-assistance" target="_blank">
-    <h3>Ontario Works</h3>
-    <p>Monthly financial help for Ontario residents 16+ in need.</p>
-  </a>
+      <a class="feature-card" href="https://www.ontario.ca/page/eligibility-ontario-works-financial-assistance" target="_blank">
+        <h3>Ontario Works</h3>
+        <p>Monthly financial help for Ontario residents 16+ in need.</p>
+      </a>
 
-  <a class="feature-card" href="https://www.ontario.ca/document/ready-set-go-guide" target="_blank">
-    <h3>Ready, Set, Go Program</h3>
-    <p>Transition program for youth leaving Children’s Aid between 18-22.</p>
-  </a>
+      <a class="feature-card" href="https://www.ontario.ca/document/ready-set-go-guide" target="_blank" data-tags="care">
+        <h3>Ready, Set, Go Program</h3>
+        <p>Transition program for youth leaving Children’s Aid between 18–22.</p>
+      </a>
 
-  <a class="feature-card" href="https://www.ontario.ca/page/osap-ontario-student-assistance-program" target="_blank">
-    <h3>OSAP Living and Learning Grant</h3>
-    <p>Extra financial support for youth who were formerly in care and are 18–26 years old.</p>
-  </a>
+      <a class="feature-card" href="https://www.ontario.ca/page/osap-ontario-student-assistance-program" target="_blank" data-tags="care age16-18">
+        <h3>OSAP Living and Learning Grant</h3>
+        <p>Extra financial support for youth who were formerly in care and are 18–26 years old.</p>
+      </a>
 
-  <a class="feature-card" href="https://sac-isc.gc.ca/eng/1650377737799/1650377806807" target="_blank">
-    <h3>Indigenous Youth Support</h3>
-    <p>For Indigenous youth formerly in care and currently living on reserve or in the Yukon.</p>
-  </a>
+      <a class="feature-card" href="https://sac-isc.gc.ca/eng/1650377737799/1650377806807" target="_blank" data-tags="indigenous care">
+        <h3>Indigenous Youth Support</h3>
+        <p>For Indigenous youth formerly in care and currently living on reserve or in the Yukon.</p>
+      </a>
     </div>
   </main>
 
- <section class="contact-section">
-  <div class="contact-container">
-    <img src="images/contactsticker.PNG" alt="Contact Illustration" class="contact-side-image">
-
-    <div class="contact-content">
-      <h2>Contact Us</h2>
-
-      <p>
-        <img src="images/maillogo.png" alt="Email Icon" class="icon">
-        <a href="mailto:awarensemble@gmail.com">awarensemble@gmail.com</a>
-      </p>
-
-      <p>
-        <img src="images/iglogo.png" alt="Instagram Icon" class="icon">
-        <a href="https://www.instagram.com/awarensemble_gta" target="_blank">@awarensemble_gta</a>
-      </p>
+  <section class="contact-section">
+    <div class="contact-container">
+      <img src="images/contactsticker.PNG" alt="Contact Illustration" class="contact-side-image" />
+      <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>
+          <img src="images/maillogo.png" alt="Email Icon" class="icon" />
+          <a href="mailto:awarensemble@gmail.com">awarensemble@gmail.com</a>
+        </p>
+        <p>
+          <img src="images/iglogo.png" alt="Instagram Icon" class="icon" />
+          <a href="https://www.instagram.com/awarensemble_gta" target="_blank">@awarensemble_gta</a>
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <footer class="footer">
     <p>&copy; 2025 AWARENSEMBLE. All rights reserved.</p>
   </footer>
-</body>
 
+  <script>
+    document.querySelectorAll('.filter-checkbox').forEach(cb => {
+      cb.addEventListener('change', () => {
+        const selectedFilters = Array.from(document.querySelectorAll('.filter-checkbox:checked')).map(cb => cb.value);
+        document.querySelectorAll('.feature-card').forEach(card => {
+          const tags = card.dataset.tags || "";
+          const matches = selectedFilters.every(f => tags.includes(f));
+          card.style.display = selectedFilters.length === 0 || matches ? "block" : "none";
+        });
+      });
+    });
+  </script>
+</body>
 </html>
+
