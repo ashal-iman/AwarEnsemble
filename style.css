@@ -1,0 +1,282 @@
+body, h1, h2, h3, p, ul, li, a, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  background-color: #f8f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.hero {
+  background-color: rgba(0, 149, 255,0.10);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  max-height: 100px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text h1 {
+  font-size: 2em;
+  color: #2a6592;
+}
+
+.slogan {
+  font-size: 0.95em;
+  color: #555;
+  font-style: italic;
+}
+
+.hero-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-right nav a {
+  color: maroon;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.hero-right nav a:hover {
+  background-color: #ddeeff;
+}
+
+.hero-right input[type="text"] {
+  padding: 6px 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.banner {
+  background-color: #faece6;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 1.1em;
+  color: #2a6592;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.feature-card {
+  background-color: #f0f4ff;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background-color: rgb(247, 255, 246);
+}
+
+
+
+.feature-card h3 {
+  color: maroon;
+  font-size: 1.5em;
+}
+
+.feature-card p {
+  font-size: 1.05em;
+  color: #555;
+}
+
+.feature-card img.feature-icon {
+  width: 150px;
+  height: 150px;;
+  margin-bottom: 12px;
+}
+
+.feature-card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+  
+  .contact-section {
+    padding: 40px 10%;
+    background-color: #fff;
+    margin: 60px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .contact-side-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .contact-content {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .contact-content h2 {
+    font-size: 2em;
+    color: #2a6592;
+    margin-bottom: 20px;
+  }
+  
+  .contact-content p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-content a {
+    color: #2a6592;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  
+  .contact-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .icon {
+    height: 30px;
+    width: 41px;
+  }
+  
+ body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(229, 241, 250, 0.8); /* adjust for brightness */
+    z-index: -1;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('images/background.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #2a2a2a;
+    text-align: center;
+  }
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+.nav-home-link {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-home-link:hover {
+  text-decoration: underline;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-icon {
+  width: 25px;
+  height: auto;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0 10px;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  color: #2a6592;
+}
+
+.section-icon {
+  width: 100px;
+  height: auto;
+}
+
