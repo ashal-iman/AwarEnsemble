@@ -53,13 +53,14 @@
 
   <section class="filter-bar container">
     <p><strong>Filters:</strong></p>
-    <label><input type="checkbox"> 16-18</label>
-    <label><input type="checkbox"> 18+</label>
-    <label><input type="checkbox"> Independent Living Aid </label>
-    <label><input type="checkbox"> Transitional </label>
-    <label><input type="checkbox"> Men Only </label>
-    <label><input type="checkbox"> Women Only </label>
-    <label><input type="checkbox"> LGBTQIA+ </label>
+    <label><input type="checkbox" name="filter" value="age16-18" class="tag-filter"> Age 16–18</label>
+    <label><input type="checkbox" name="filter" value="age18+" class="tag-filter"> Age 18+</label>
+    <label><input type="checkbox" name="filter" value="transitional" class="tag-filter"> Transitional Housing</label>
+    <label><input type="checkbox" name="filter" value="rent" class="tag-filter"> Independent Living Aid</label>
+    <label><input type="checkbox" name="filter" value="men" class="tag-filter"> Men Only</label>
+    <label><input type="checkbox" name="filter" value="women" class="tag-filter"> Women Only</label>
+    <label><input type="checkbox" name="filter" value="lgbtqia+" class="tag-filter"> LGBTQIA+</label>
+
   </section>
 
  
@@ -69,12 +70,12 @@
   <main class="hero-cards container">
     <div class="grid">
 
-    <a class="feature-card" href="https://211central.ca/record/75717704/" target="_blank">
+    <a class="feature-card" href="https://211central.ca/record/75717704/" target="_blank" data-tags="transitional housing age16-18 age18+">
       <h3>Friends of Ruby</h3>
       <p>Transitional housing for 2SLGBTQIA+ youth ages 16-29</p>
       <p><br><b>Address: 257 Dundas St E, Toronto, ON</b></p>
     </a>
-    <a class="feature-card" href="https://covenanthousetoronto.ca/our-solution/housing-and-aftercare/" target="_blank">
+    <a class="feature-card" href="https://covenanthousetoronto.ca/our-solution/housing-and-aftercare/" target="_blank" data-tags="transitional housing age16-18 age18+">
       <h3>Covenant House</h3>
       <p>Reception staff and youth workers are available to welcome youth day and night. 96 beds available and residents have access to showers, meals and
         programming.</p>
@@ -82,7 +83,7 @@
         <p><b>Email: inquiries@covenanthouse.ca</b></p>
         <p><b>Phone: 1-800-435-7308 / (416) 598-4898 </b></p>
     </a>
-    <a class="feature-card" href="https://loftcs.org/housing/independent-living/" target="_blank">
+    <a class="feature-card" href="https://loftcs.org/housing/independent-living/" target="_blank" data-tags="transitional rent housing age16-18 age18+">
       <h3>LOFT Independent Living</h3>
       <p>Low-support housing through apartment buildings, shared homes and through our partnerships with Toronto Community Housing Corporation and
       Simcoe County Housing Corporation. </p>
@@ -90,21 +91,21 @@
         <p><b>Email: info@loftcs.org</b></p>
         <p><b>Phone: 416-979-1994</b></p>
     </a>
-    <a class="feature-card" href="https://horizonsforyouth.org/housing" target="_blank">
+    <a class="feature-card" href="https://horizonsforyouth.org/housing" target="_blank" data-tags="transitional housing age16-18 age18+">
       <h3>Horizons for Youth</h3>
       <p> Shelter for at-risk and homeless youth between the ages of 16-24 years old</p>
        <p><br><b>Address: 422 Gilbert Ave, Toronto ,ON</b></p>
         <p><b>Email: info@horizonsforyouth.org</b></p>
         <p><b>Phone: 416.781.9898</b></p>
     </a>
-    <a class="feature-card" href="https://www.conccommunity.org/contact/" target="_blank">
+    <a class="feature-card" href="https://www.conccommunity.org/contact/" target="_blank" data-tags="transitional housing age18+ men-only">
       <h3>CONC Men's Shelter</h3>
       <p>For Men. Men's Shelter for 68 men each night and 20 units of transitional housing.</p>
       <p><br><b>Email: info@conc.ca</b></p>
         <p><b>Phone: (416) 516-8642</b></p>
         <p><b>General Intake: 416-338-4766</b></p>
     </a>
-    <a class="feature-card" href="https://familyservicetoronto.org/our-services/programs-and-services/transitional-and-housing-support/" target="_blank">
+    <a class="feature-card" href="https://familyservicetoronto.org/our-services/programs-and-services/transitional-and-housing-support/" target="_blank" data-tags="transitional housing age18+  women-only">
       <h3>FST Housing</h3>
       <p>Women Only. For Women-identified individuals who seek support after experiencing abuse by their partners or significant
         others or survivors of human trafficking, aged 18 years or older. Interpreter services also available.
